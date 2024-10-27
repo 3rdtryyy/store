@@ -1,287 +1,632 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CrustyCrave | Every bite Savors the Crunch</title>
-
-    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-   
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" rel="stylesheet">
+    <title>RThirft</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
-    
-    <header>
-        <nav><div class="nav container">
-            <a href="#" class="logo"><span>CrustyCrave</span>Pizza-store</a>
-            <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#food">FOODS</a></li>
-                <li><a href="#drinks">DRINKS</a></li>
-                <li><a href="#about-us">ABOUT US</a></li>z
-                <li><a href="#feedback">REVIEWS</a></li>
-                <i class='bx bx-menu' id="menu-bar"></i>
-                <i class='bx bx-cart' id="cart-icon"></i>
-            </ul>
-        </nav>
-        
-        
-            <div class="cart">
-                <h2 class="cart-title">Your Cart</h2>
+    <body>
 
-          
-                <div class="cart-content">
-
-
-                </div>
+        <header>
+            <div class="navigation">
+                <img src="Logo.png" class="img-responsive" alt="Logo" />
                 
-               
-                <div class="total">
-                    <div class="total-title">Total</div>
-                    <div class="total-price">$ <span class="total-amount">0.00</span></div>
-                </div>
-            
-                <button type="button" class="btn-buy">Buy Now</button>
-            
-                <i class='bx bx-x' id="cart-close"></i>
+                <nav>
+                    <ul>
+                        <li><a href="#homepage">HOME</a></li>
+                        <li><a href="#product1">SHOP</a></li>
+                        <li><a href="#about">ABOUT</a></li>
+                        <li><a href="#gallery">GALLERY</a></li>
+                        <li><a href="#teamsss">TEAM</a></li>
+                    </ul>
+                </nav>
+                <button type="button" onclick="scrollToShop()">Order NOW!</button>
             </div>
-        </div>
-    </header>
-<div id="home">
-    <section class="home container">
-    <div class="mainText">
-        <h1>Welcome To <span>CrustyCrave</span>! <br>where every bite savors the crunch</h1>
-        <p>At CrustyCrave, we believe that every pizza should be an experience worth savoring. <br>Our website is designed to make ordering your favorite pies quick, easy, and delightful.</p>
-        <button>Explore Foods</button>
-    </div>
-</section>
-</div>
+      
+            <!-- Notification div -->
+            <div id="notification" class="notification" style="display:none;position: fixed; top: 20px; right: 20px; background-color: #2196F3 !important; color: white; padding: 10px; border-radius: 5px;"> </div>
+        </header>
     
+        <div id="homepage" class="Homepage">
+            <h1> "Welcome to R-Thrift Store!"</h1>
+            <p>We bring you the latest urban fashion trends that let you express your unique style. Discover Your City Style Today!</p>
 
- 
-    <div id="food">
-    <section class="shop container">
-        <h2 class="section-title">FOOD MENU</h2>
+            <div class="slider">
+                
+                <div class="slide-track">
 
-       
-        <div class="shop-content">
-          
-            <div class="product-box">
-                <img src="food1.png" alt="" class="product-img">
-                <h2 class="product-title">Chicken Supreme</h2>
-                <span class="product-price">$8.85</span>
-                <i class='bx bxs-cart-add add-cart'></i>
-            </div>
-            <!-- BOX 2 -->
-            <div class="product-box">
-                <img src="food2.png" alt="" class="product-img">
-                <h2 class="product-title">Hawaiin Pizza</h2>
-                <span class="product-price">$7.24</span>
-                <i class='bx bxs-cart-add add-cart'></i>
-            </div>
-            <!-- BOX 3 -->
-            <div class="product-box">
-                <img src="food3.png" alt="" class="product-img">
-                <h2 class="product-title">Meat Lover</h2>
-                <span class="product-price">$7.77</span>
-                <i class='bx bxs-cart-add add-cart'></i>
-            </div>
-            <!-- BOX 4 -->
-            <div class="product-box">
-                <img src="food4.png" alt="" class="product-img">
-                <h2 class="product-title">Supreme Supreme</h2>
-                <span class="product-price">$7.78</span>
-                <i class='bx bxs-cart-add add-cart'></i>
-            </div>
-            <!-- BOX 5 -->
-            <div class="product-box">
-                <img src="food5.png" alt="" class="product-img">
-                <h2 class="product-title">Supreme</h2>
-                <span class="product-price">$7.23</span>
-                <i class='bx bxs-cart-add add-cart'></i>
-            </div>
-            <!-- BOX 6 -->
-            <div class="product-box">
-                <img src="food.6.png" alt="" class="product-img">
-                <h2 class="product-title">Bacon Cheese Burger</h2>
-                <span class="product-price">$7.22</span>
-                <i class='bx bxs-cart-add add-cart'></i>
-            </div>
-            <!-- BOX 7 -->
-            <div class="product-box">
-                <img src="Wingstreet-Garlic-Parmesan1.png" alt="" class="product-img">
-                <h2 class="product-title"><br><br><br>Garlic-Parmesan</h2>
-                <span class="product-price"><br>$3.52</span>
-                <i class='bx bxs-cart-add add-cart'></i>
-            </div>
-            <!-- BOX 8 -->
-            <div class="product-box">
-                <img src="Wingstreet-Honey-BBQ1.png" alt="" class="product-img">
-                <h2 class="product-title"><br><br><br>Honey BBQ</h2>
-                <span class="product-price"><br>$3.53</span>
-                <i class='bx bxs-cart-add add-cart'></i>
-            </div>
-            <!-- BOX 9 -->
-            <div class="product-box">
-                <img src="spag-bolognese-baked.png" alt="" class="product-img">
-                <h2 class="product-title"><br><br><br>Spag Bolognese Baked</h2>
-                <span class="product-price"><br>$2.66</span>
-                <i class='bx bxs-cart-add add-cart'></i>
-            </div>
-            <!-- BOX 10 -->
-            <div class="product-box">
-                <img src="spaghetti-carbonara-baked2.png" alt="" class="product-img">
-                <h2 class="product-title"><br><br><br>Carbonara Baked</h2>
-                <span class="product-price"><br><br>$2.67</span>
-                <i class='bx bxs-cart-add add-cart'></i>
+                    <div class="slide">
+                        <img src="1 (1).jpg" alt="Slide 1" />
+                    </div>
+
+                    <div class="slide">
+                        <img src="1 (15).jpg" alt="Slide 1" />
+                    </div>
+
+                    <div class="slide">
+                        <img src="ls 1 (6).jpg" alt="Slide 1" />
+                    </div>
+
+                    <div class="slide">
+                        <img src="ls 1 (9).jpg" alt="Slide 1" />
+                    </div>
+
+                    <div class="slide">
+                        <img src="1 (5).jpg" alt="Slide 1" />
+                    </div>
+
+                    <div class="slide">
+                        <img src="1 (17).jpg" alt="Slide 1" />
+                    </div>
+
+                    <div class="slide">
+                        <img src="1 (1).jpg" alt="Slide 1" />
+                    </div>
+
+                    <div class="slide">
+                        <img src="1 (7).jpg" alt="Slide 1" />
+                    </div>
+                    
+                    <div class="slide">
+                        <img src="1 (16).jpg" alt="Slide 1" />
+                    </div>
+                    
+                    <div class="slide">
+                        <img src="ls 1 (10).jpg" alt="Slide 1" />
+                    </div>
+                    
+                    <div class="slide">
+                        <img src="1 (1).jpg" alt="Slide 1" />
+                    </div>
+                    
+                    <div class="slide">
+                        <img src="1 (15).jpg" alt="Slide 1" />
+                    </div>
+                    
+                    <div class="slide">
+                        <img src="ls 1 (7).jpg" alt="Slide 1" />
+                    </div>
+                    
+                    <div class="slide">
+                        <img src="ls 1 (6).jpg" alt="Slide 1" />
+                    </div>
+                    
+                    <div class="slide">
+                        <img src="1 (15).jpg" alt="Slide 1" />
+                    </div>
+                    
+                    <div class="slide">
+                        <img src="1 (16).jpg" alt="Slide 1" />
+                    </div>
+                    
+                    <div class="slide">
+                        <img src="1 (17).jpg" alt="Slide 1" />
+                    </div>
+                    
+                    <div class="slide">
+                        <img src="ls 1 (9).jpg" alt="Slide 1" />
+                    </div>
+
+
+
+                </div>
             </div>
         </div>
-    </section>
 
-    </div>
+        <div class="divider"></div>
 
-    <div id="drinks">
-        <section class="shop container">
-        <h2 class="section-title">Drinks</h2>
-        <div class="shop-content">
-            <!-- BOX 1 -->
-            <div class="product-box">
-                <img src="coke1l.png" alt="" class="product-img">
-                <h2 class="product-title">Coke 1.5L</h2>
-                <span class="product-price">$3</span>
-                <i class='bx bxs-cart-add add-cart'></i>
-            </div>
-            <!-- BOX 2 -->
-            <div class="product-box">
-                <img src="pepsi.png" alt="" class="product-img">
-                <h2 class="product-title">Pepsi 1L</h2>
-                <span class="product-price">$2.46</span>
-                <i class='bx bxs-cart-add add-cart'></i>
-            </div>
-            <!-- BOX 3 -->
-            <div class="product-box">
-                <img src="7-up.png" alt="" class="product-img">
-                <h2 class="product-title">7 Up 1L</h2>
-                <span class="product-price">$2.55</span>
-                <i class='bx bxs-cart-add add-cart'></i>
-            </div>
-            <!-- BOX 4 -->
-            <div class="product-box">
-                <img src="water.png" alt="" class="product-img">
-                <h2 class="product-title">Evian Water</h2>
-                <span class="product-price">$0.69</span>
-                <i class='bx bxs-cart-add add-cart'></i>
-            </div>
-            <!-- BOX 5 -->
-            <div class="product-box">
-                <img src="royal-removebg-preview.png" alt="" class="product-img">
-                <h2 class="product-title">Royal 1L</h2>
-                <span class="product-price">$2.60</span>
-                <i class='bx bxs-cart-add add-cart'></i>
-            </div>
-            <!-- BOX 6 -->
-            <div class="product-box">
-                <img src="mountain dew.png" alt="" class="product-img">
-                <h2 class="product-title">Mountain Dew 1L</h2>
-                <span class="product-price"><br><br>$ 2.55</span>
-                <i class='bx bxs-cart-add add-cart'></i>
-            </div>
-            <!-- BOX 7 -->
-            <div class="product-box">
-                <img src="c2_beverage-removebg-preview.png" alt="" class="product-img">
-                <h2 class="product-title">C2 355mL</h2>
-                <span class="product-price"><br><br>$0.44</span>
-                <i class='bx bxs-cart-add add-cart'></i>
-            </div>
-            <!-- BOX 8 -->
-            <div class="product-box">
-                <img src="ice-tea-removebg-preview.png" alt="" class="product-img">
-                <h2 class="product-title">Iced Tea </h2>
-                <span class="product-price"><br><br>$0.50</span>
-                <i class='bx bxs-cart-add add-cart'></i>
-            </div>
-            <!-- BOX 9 -->
-            <div class="product-box">
-                <img src="sprite-removebg-preview.png" alt="" class="product-img">
-                <h2 class="product-title"><br>Sprite 355mL</h2>
-                <span class="product-price"><br><br>$0.55</span>
-                <i class='bx bxs-cart-add add-cart'></i>
-            </div>
-            <!-- BOX 10 -->
-            <div class="product-box">
-                <img src="coke-removebg-preview.png" alt="" class="product-img">
-                <h2 class="product-title"><br>Coke mL</h2>
-                <span class="product-price"><br><br>$0.56</span>
-                <i class='bx bxs-cart-add add-cart'></i>
-            </div>
-        </div>
-    </section>
+        <section id="product1" class="section-p1">
+            <h2>Available Products</h2>
+            <p>Collection</p>
+            <div class="products-container">
+                <div class="pro">
+                    <img src="t_shirt 1.jfif" alt="T-Shirt 1">
+                    <div class="des">
+                        <span>T-SHIRT</span>
+                        <h5>PeerLess Project</h5>
+                        <h4>₱ 100</h4>
+                        <div class="size-selection ">
+                            <label for="size-small" class="size-circle">
+                                <input type="radio" id="size-small" name="size" value="Small" onchange="selectSize(this)"> Small
+                            </label>
 
+                            <label for="size-medium" class="size-circle">
+                                <input type="radio" id="size-medium" name="size" value="Medium" onchange="selectSize(this)"> Medium</label>
+                        
 
-        
+                            <label for="size-large" class="size-circle">
+                                <input type="radio" id="size-large" name="size" value="Large" onchange="selectSize(this)"> Large
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <a class="add-to-cart-icon" onclick="addToCart('PeerLess Project', 100)"><i class="bx bxs-cart-alt cart"></i></a>
+               
+                </div>
 
-</div>
-<div id="about-us">
-        <section class="about container">
-            <h2 class="section-title">About Us</h2>
-            <div class="about-content">
-                <a href="#" class="logo"><span>CrustyCrave</span>Pizza-store</a>
-                <p>Welcome to CrustyCrave, your ultimate destination for delicious pizza! We pride ourselves on delivering mouthwatering pizzas made with the finest ingredients and crafted with love.</p>
-                <p>At CrustyCrave, we believe in offering not just a meal, but an experience. Our dedicated team works tirelessly to ensure every pizza is perfect, from the first bite to the last.</p>
-                <p>Founded in 2016, CrustyCrave has quickly become a beloved fixture in the community. With a commitment to quality, innovation, and customer satisfaction, we continue to push the boundaries of pizza perfection.</p>
+                <div class="pro">
+                    <img src="t_shirt 2.jpg" alt="T-Shirt 2">
+                    <div class="des">
+                        <span>T-SHIRT</span>
+                        <h5>Levis</h5>
+                        <h4>₱ 100</h4>
+                        <div class="size-selection ">
+                            <label for="size-small" class="size-circle">
+                                <input type="radio" id="size-small" name="size" value="Small" onchange="selectSize(this)"> Small
+                            </label>
+
+                            <label for="size-medium" class="size-circle">
+                                <input type="radio" id="size-medium" name="size" value="Medium" onchange="selectSize(this)"> Medium</label>
+                        
+
+                            <label for="size-large" class="size-circle">
+                                <input type="radio" id="size-large" name="size" value="Large" onchange="selectSize(this)"> Large
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <a class="add-to-cart-icon" onclick="addToCart('Levis', 100)"><i class="bx bxs-cart-alt cart"></i></a>
+               
+                </div>
+
+                <div class="pro">
+                    <img src="t_shirt 3.jpg" alt="T-Shirt 3">
+                    <div class="des">
+                        <span>T-SHIRT</span>
+                        <h5>Billie Eilish</h5>
+                        <h4>₱ 100</h4>
+                        <div class="size-selection ">
+                            <label for="size-small" class="size-circle">
+                                <input type="radio" id="size-small" name="size" value="Small" onchange="selectSize(this)"> Small
+                            </label>
+
+                            <label for="size-medium" class="size-circle">
+                                <input type="radio" id="size-medium" name="size" value="Medium" onchange="selectSize(this)"> Medium</label>
+                        
+
+                            <label for="size-large" class="size-circle">
+                                <input type="radio" id="size-large" name="size" value="Large" onchange="selectSize(this)"> Large
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <a class="add-to-cart-icon" onclick="addToCart('Billie Eilish', 100)"><i class="bx bxs-cart-alt cart"></i></a>
+               
+                </div>
+
+                <div class="pro">
+                    <img src="t_shirt 4.jpg" alt="T-Shirt 4">
+                    <div class="des">
+                        <span>T-SHIRT</span>
+                        <h5>Sept Wolves</h5>
+                        <h4>₱ 100</h4>
+                        <div class="size-selection ">
+                            <label for="size-small" class="size-circle">
+                                <input type="radio" id="size-small" name="size" value="Small" onchange="selectSize(this)"> Small
+                            </label>
+
+                            <label for="size-medium" class="size-circle">
+                                <input type="radio" id="size-medium" name="size" value="Medium" onchange="selectSize(this)"> Medium</label>
+                        
+
+                            <label for="size-large" class="size-circle">
+                                <input type="radio" id="size-large" name="size" value="Large" onchange="selectSize(this)"> Large
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <a class="add-to-cart-icon" onclick="addToCart('Sept Wolves', 100)"><i class="bx bxs-cart-alt cart"></i></a>
+               
+                </div>
+
+                <div class="pro">
+                    <img src="Jacket1.jpg" alt="Jacket 1">
+                    <div class="des">
+                        <span>Jacket</span>
+                        <h5>Dream Means Urban Style</h5>
+                        <h4>₱ 150</h4>
+                        <div class="size-selection ">
+                            <label for="size-small" class="size-circle">
+                                <input type="radio" id="size-small" name="size" value="Small" onchange="selectSize(this)"> Small
+                            </label>
+
+                            <label for="size-medium" class="size-circle">
+                                <input type="radio" id="size-medium" name="size" value="Medium" onchange="selectSize(this)"> Medium</label>
+                        
+
+                            <label for="size-large" class="size-circle">
+                                <input type="radio" id="size-large" name="size" value="Large" onchange="selectSize(this)"> Large
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <a class="add-to-cart-icon" onclick="addToCart('Dream Means Urban Style', 150)"><i class="bx bxs-cart-alt cart"></i></a>
+               
+                </div>
+
+                <div class="pro">
+                    <img src="Jacket2.jpg" alt="Jacket 2">
+                    <div class="des">
+                        <span>Jacket</span>
+                        <h5>Next Level</h5>
+                        <h4>₱ 150</h4>
+                        <div class="size-selection ">
+                            <label for="size-small" class="size-circle">
+                                <input type="radio" id="size-small" name="size" value="Small" onchange="selectSize(this)"> Small
+                            </label>
+
+                            <label for="size-medium" class="size-circle">
+                                <input type="radio" id="size-medium" name="size" value="Medium" onchange="selectSize(this)"> Medium</label>
+                        
+
+                            <label for="size-large" class="size-circle">
+                                <input type="radio" id="size-large" name="size" value="Large" onchange="selectSize(this)"> Large
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <a class="add-to-cart-icon" onclick="addToCart('Next Level', 150)"><i class="bx bxs-cart-alt cart"></i></a>
+               
+                </div>
+
+                <div class="pro">
+                    <img src="Jacket3.jfif" alt="Jacket 3">
+                    <div class="des">
+                        <span>Jacket</span>
+                        <h5>Navy Blue</h5>
+                        <h4>₱ 150</h4>
+                        <div class="size-selection ">
+                            <label for="size-small" class="size-circle">
+                                <input type="radio" id="size-small" name="size" value="Small" onchange="selectSize(this)"> Small
+                            </label>
+
+                            <label for="size-medium" class="size-circle">
+                                <input type="radio" id="size-medium" name="size" value="Medium" onchange="selectSize(this)"> Medium</label>
+                        
+
+                            <label for="size-large" class="size-circle">
+                                <input type="radio" id="size-large" name="size" value="Large" onchange="selectSize(this)"> Large
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <a class="add-to-cart-icon" onclick="addToCart('Navy Blue', 150)"><i class="bx bxs-cart-alt cart"></i></a>
+               
+                </div>
+
+                <div class="pro">
+                    <img src="Jacket4.jfif" alt="Jacket 4">
+                    <div class="des">
+                        <span>Jacket</span>
+                        <h5>Black</h5>
+                        <h4>₱ 150</h4>
+                        <div class="size-selection ">
+                            <label for="size-small" class="size-circle">
+                                <input type="radio" id="size-small" name="size" value="Small" onchange="selectSize(this)"> Small
+                            </label>
+
+                            <label for="size-medium" class="size-circle">
+                                <input type="radio" id="size-medium" name="size" value="Medium" onchange="selectSize(this)"> Medium</label>
+                        
+
+                            <label for="size-large" class="size-circle">
+                                <input type="radio" id="size-large" name="size" value="Large" onchange="selectSize(this)"> Large
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <a class="add-to-cart-icon" onclick="addToCart('Black', 150)"><i class="bx bxs-cart-alt cart"></i></a>
+               
+                </div>
+            </div>
+            <div class="addToCart">
+                <h2>Your Cart</h2>
+                <div id="cartItems"></div>
+                <p>Total: ₱<span id="totalValue">0</span></p>
+                <button onclick="checkout()">Checkout</button>
             </div>
         </section>
-    </div>
-<div id="feedback">
-<section class="review container">
-    <h2 class="section-title">Reviews</h2>
-            <div class="reviews">
-                <div class="reviewCard">
-                    <img src="1.png" alt="">
-                    <p>
-                        "CrustyCrave" offers a mouthwatering experience from start to finish.
-                    </p>
-                </div>
-                <div class="reviewCard">
-                    <img src="2.png" alt="">
-                    <p>Navigating the site is a breeze,<br>
-                        with a clean and intuitive interface that makes ordering your favorite pizza a joy.
-                    </p>
 
-                </div>
-                <div class="reviewCard">
-                    <img src="3.png" alt="">
-                    <p> 
-                        The menu boasts an impressive variety of toppings, crusts, and specialty pizzas, catering to every palate.
-                    </p>
-                </div>
-            </div>
+        <div id="notification" style="display: none;"></div>
+        
 
-</section>
+        <div class="divider"></div>
+    
+        <div id="about" class="About">
+            <div class="about-container">
+                <div class="about-content-section">
+                    <div class="title">
+                        <h2>About us</h2>
+                    </div>
+                    <div class="about-content">
+                        <h3>Rusnita's Store</h3>
+                        <p>
+                            At Rusnita Thrift Store, we believe in the power of sustainability, affordability, and style. Founded with a passion for giving second-hand items a new life, we provide our customers with a curated selection of high-quality, pre-loved clothing, accessories, and unique treasures.
+                        </p>
+            
+                        <p>
+                          Our mission is to provide a sustainable shopping alternative that empowers individuals to make environmentally conscious choices. By offering a wide range of affordable, high-quality thrifted fashion and everyday essentials, we aim to reduce waste, lower the carbon footprint, and contribute to a circular economy. We believe that everyone should have access to stylish, functional products without compromising their values or the planet’s well-being. Through our efforts, we hope to inspire a movement of conscious consumerism, where shopping is not only a necessity but also a positive force for environmental and social change.
+                        </p>
+                        <div class="button">
+                            <a href="#gallery">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="about-social">
+                        <a href="#"><i class="bx bxl-facebook"></i></a>
+                        <a href="#"><i class="bx bxl-instagram"></i></a>
+                        <a href="#"><i class="bx bxl-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="about-image-container">
+                    <img src="about-image.jpg" alt="Store Image">
+                </div>
 
-<footer>
-    <div class="footer container">
-        <div class="footer-left">
-            <h2>CrustyCrave</h2>
-            <p>A place where every bite savors the crunch</p>
-        </div>
-        <div class="footer-right">
-            <h2>Follow Us</h2>
-            <div class="social-links">
-                <a href="#"><i class='bx bxl-facebook-circle'></i></a>
-                <a href="#"><i class='bx bxl-twitter'></i></a>
-                <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+              
             </div>
         </div>
-    </div>
-</footer>
 
-</div>
+        <div class="divider"></div>
+    
+        <div id="gallery" class="gallery">
+            <h2>Our Story</h2>
+            <div class="image-container">
+                <img src="gallery1.jpg" alt="Business Image 1">
+                <img src="gallery 2.jpeg" alt="Business Image 2">
+                <img src="galler3.jpg" alt="Business Image 3">
+                <img src="gallert4.jpg"alt="Business Image 4">
+            </div>
+            <p>Rusnita Thrift Store was born out of a love for fashion and a desire to make a positive impact on both people and the planet. With every purchase, you’re not only saving money but also contributing to a more sustainable future.
 
-    <script src="app.js"></script>
-</body>
+                We take pride in offering a diverse collection of items, carefully chosen to meet your fashion needs and personal style. Whether you’re looking for vintage pieces, designer finds, or everyday basics, you’ll find something special at Rusnita Thrift Store—all at unbeatable prices.
+                
+                </p>
+        </div>
 
+        <div class="divider"></div>
+
+        <section id="teampage" class="teampage">
+            
+            
+
+         <div class="wrapper">
+            <div  id = "teamsss" class="TeamContainer">
+                <h2> Our Team</h2>
+                <p>Team &lt;optgroup&gt; is a dedicated group of creative and tech-savvy individuals collaborating to design and develop a website for Rusnita Thrift Store.
+                Their project aims to showcase the store's unique, affordable fashion items while providing an intuitive online shopping experience.
+                 With a focus on clean design, seamless navigation, and user-friendly features, Team &lt;optgroup&gt;is committed to elevating Rusnita Thrift Store’s digital presence and connecting it with a wider audience.
+                    
+                    </p>
+            </div>
+            
+
+         <div class="card_container">
+
+            <div class="card">
+                <div class="imbBx">
+                    <img src="m.png"alt="T-Shirt 1">
+            </div>
+
+            <div class="content">
+                <div class="contentBx">
+                    <h3>Moren Mitra <br><span>Project Manager</span></h3>
+                </div>
+                <ul class="sci">
+                    <li style="--i: 1">
+                        <a href="#"><i class='bx bxl-instagram' ></i></a>
+                    </li>
+
+                    <li style="--i: 2">
+                        <a href="#"><i class='bx bxl-facebook-circle' ></i></a>
+                    </li>
+
+                    <li style="--i: 3">
+                        <a href="#"><i class='bx bxl-twitter' ></i></a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+
+            <div class="card">
+                <div class="imbBx">
+                    <img src="m.png"alt="T-Shirt 1">
+            </div>
+
+            <div class="content">
+                <div class="contentBx">
+                    <h3>Marian Alba <br><span>Encoder</span></h3>
+                </div>
+                <ul class="sci">
+                    <li style="--i: 1">
+                        <a href="#"><i class='bx bxl-instagram' ></i></a>
+                    </li>
+
+                    <li style="--i: 2">
+                        <a href="#"><i class='bx bxl-facebook-circle' ></i></a>
+                    </li>
+
+                    <li style="--i: 3">
+                        <a href="#"><i class='bx bxl-twitter' ></i></a>
+                    </li>
+                </ul>
+               </div>
+            </div>
+
+            <div class="card">
+                <div class="imbBx">
+                    <img src="m.png"alt="T-Shirt 1">
+            </div>
+
+            <div class="content">
+                <div class="contentBx">
+                    <h3>Joren Almanzor <br><span>Speaker</span></h3>
+                </div>
+                <ul class="sci">
+                    <li style="--i: 1">
+                        <a href="#"><i class='bx bxl-instagram' ></i></a>
+                    </li>
+
+                    <li style="--i: 2">
+                        <a href="#"><i class='bx bxl-facebook-circle' ></i></a>
+                    </li>
+
+                    <li style="--i: 3">
+                        <a href="#"><i class='bx bxl-twitter' ></i></a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+
+            <div class="card">
+                <div class="imbBx">
+                    <img src="m.png"alt="T-Shirt 1">
+            </div>
+
+            <div class="content">
+                <div class="contentBx">
+                    <h3>RM Galagar<br><span>Data Analyst</span></h3>
+                </div>
+                <ul class="sci">
+                    <li style="--i: 1">
+                        <a href="#"><i class='bx bxl-instagram' ></i></a>
+                    </li>
+
+                    <li style="--i: 2">
+                        <a href="#"><i class='bx bxl-facebook-circle' ></i></a>
+                    </li>
+
+                    <li style="--i: 3">
+                        <a href="#"><i class='bx bxl-twitter' ></i></a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+
+            <div class="card">
+                <div class="imbBx">
+                    <img src="m.png"alt="T-Shirt 1">
+            </div>
+
+            <div class="content">
+                <div class="contentBx">
+                    <h3>Japhiel Malalad <br><span>Programmer</span></h3>
+                </div>
+                <ul class="sci">
+                    <li style="--i: 1">
+                        <a href="#"><i class='bx bxl-instagram' ></i></a>
+                    </li>
+
+                    <li style="--i: 2">
+                        <a href="#"><i class='bx bxl-facebook-circle' ></i></a>
+                    </li>
+
+                    <li style="--i: 3">
+                        <a href="#"><i class='bx bxl-twitter' ></i></a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+
+            <div class="card">
+                <div class="imbBx">
+                    <img src="m.png"alt="T-Shirt 1">
+            </div>
+
+            <div class="content">
+                <div class="contentBx">
+                    <h3>Charles Dela Torre<br><span>Programmer</span></h3>
+                </div>
+                <ul class="sci">
+                    <li style="--i: 1">
+                        <a href="#"><i class='bx bxl-instagram' ></i></a>
+                    </li>
+
+                    <li style="--i: 2">
+                        <a href="#"><i class='bx bxl-facebook-circle' ></i></a>
+                    </li>
+
+                    <li style="--i: 3">
+                        <a href="#"><i class='bx bxl-twitter' ></i></a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+
+            <div class="card">
+                <div class="imbBx">
+                <img src="m.png"alt="T-Shirt 1">
+            </div>
+
+            <div class="content">
+                <div class="contentBx">
+                    <h3>Marlon A. Esmilla <br><span>Encoder</span></h3>
+                </div>
+                <ul class="sci">
+                    <li style="--i: 1">
+                        <a href="#"><i class='bx bxl-instagram' ></i></a>
+                    </li>
+
+                    <li style="--i: 2">
+                        <a href="#"><i class='bx bxl-facebook-circle' ></i></a>
+                    </li>
+
+                    <li style="--i: 3">
+                        <a href="#"><i class='bx bxl-twitter' ></i></a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+
+            
+        </div>
+
+        </div>
+
+        </section>
+
+        <div class="divider"></div>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h3>Store Location</h3>
+                    <p>Rusnita Thrift Store</p>
+                    <p>1234 Thrift Avenue, Barangay Green, Marikina City, Philippines</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Store Hours</h3>
+                    <p>Monday - Friday: 9 AM - 7 PM</p>
+                    <p>Saturday: 10 AM - 6 PM</p>
+                    <p>Sunday: Closed</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>+639346629878</p>
+                    <p>rusnitastore@gmail.com</p>
+                 </div>
+
+                <div class="footer-section">
+                    <h3>Reviews</h3>
+                    <p>We’d love to hear from you! Whether you have questions, feedback, or need assistance, feel free to reach out to us using the form below.</p>
+                    <form id="contact-form">
+                        <input type="email" placeholder="Email" required>
+                        <input type="text" placeholder="Name" required>
+                        <textarea placeholder="Message" required></textarea>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Rusnita Thrift Store. All Rights Reserved.</p>
+            </div>
+        </footer>
+
+        <script src="app.js"></script>
+
+    </body>
 </html>
