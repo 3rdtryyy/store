@@ -214,21 +214,22 @@ nav ul li a:hover {
 }
 
 #product1 .pro {
- width: 23%;   
- min-width: 190px;
- padding: 10px, 12px;
- border: 1px solid #ddd;
- box-shadow: 20px 20px 30px rgb(0, 0, 0, 0.01);
- background-image: url(wp.jpg);
- background-size: cover;
- background-position: center;
- transition: transform 0.3s ease, box-shadow 0.3s ease;
- margin: 15px 0;
- transition: 0.2s ease;
- border-radius: 20px;
- position: relative;
- box-shadow: 0 30px 30px -20px rgba(0, 0, 0, 1),
-                inset 0 00 1000px rgba(67, 52, 109, .6);
+    height: 50%;
+    width: 24%;   
+    min-width: 190px;
+    padding: 1em;
+    border: 1px solid #ddd;
+    background-image: url(wp.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    position: relative;
+    box-shadow: 0 30px 30px -20px rgba(0, 0, 0, 1),
+                inset 0 0 1000px rgba(67, 52, 109, .6);
+    overflow: hidden; 
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 1em 0;
 }
 
 #product1 .pro:hover{
@@ -269,30 +270,35 @@ nav ul li a:hover {
     color:black;
     font-size: 14px;
  }
- 
+
  .size-selection {
-    font-size: 100px;
+   
     display: flex;
-    gap: 15px; /* Space between size buttons */
-    font-size: 13px;
-    margin-top: 20px;
-    margin-bottom: 8px;
-    
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.1em;
+    font-size: 1rem;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    justify-content: start; /* Center items within container */
 }
 
 .size-circle {
-    color: black;
-    font-size: 12px;
-    display: inline-flex;
+    font-size: 15px;
+    padding: 0.3em; /* Use em for responsive padding */
+    border-radius: 50%;
+
+   
+    display: flex;
     align-items: center;
-    justify-content: center; /* Center the label text */
-    text-align: center;
-    transition: border-color 0.3s, background-color 0.3s; /* Smooth transitions */
-    position: relative;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
 }
+
 .size-circle input {
-    height: 18px;
-    width: 18px;
+    width: 1em;
+    height: 1em;
     display: inline-flex;
     align-items: center;
     justify-content: center; /* Center the label text */
@@ -307,20 +313,21 @@ nav ul li a:hover {
 }
 
 
- #product1 .pro .cart {
-    width:40px;
-    height: 40px;
-    line-height: 40px;
-    border-radius: 50px;
+#product1 .pro .cart {
+    width: 2.5em;
+    height: 2.5em;
+    line-height: 2.5em;
+    border-radius: 50%;
     background-color: white;
     color: black;
     font-weight: 500;
-    border:1px solid #cce7d0;
-    position: absolute;
-    bottom: 20px;
-    right: 10px;
-    
- }
+    border: 1px solid #cce7d0;
+    position: bottom center;
+    bottom: calc(1em + 5%);
+    right: calc(1em + 5%);
+    box-sizing: border-box;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
 
  #product1 .pro .cart:hover {
     background-color: blue;
