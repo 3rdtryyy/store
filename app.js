@@ -11,6 +11,21 @@ function selectSize(sizeInput) {
     selectedSize = sizeInput.value; // Store the selected size
 }
 
+const audio = document.getElementById('background-sound');
+const playButton = document.getElementById('play-sound');
+
+// Function to start audio playback
+function startAudio() {
+    audio.muted = false; // Unmute the audio
+    audio.play(); // Play the audio
+    playButton.style.display = 'none'; // Hide the button after starting the audio
+}
+
+// Scroll function example (modify as needed)
+function scrollToShop() {
+    document.querySelector('#product1').scrollIntoView({ behavior: 'smooth' });
+}
+
 
 
 // Function to add a product to the cart
